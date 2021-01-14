@@ -105,10 +105,24 @@ button {
   line-height: 0.8rem;
 }
 
+@media (min-width: 768px) {
+  .navigation .mobile-menu .mobile-nav .mobile-title-link {
+    height: 80px;
+    width: 200px;
+  }
+}
+
 .navigation .mobile-menu .mobile-nav .mobile-title-link .mobile-name {
   font-size: 0.8rem;
   text-align: center;
   font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .navigation .mobile-menu .mobile-nav .mobile-title-link .mobile-name {
+    font-size: 1rem;
+    line-height: 16px;
+  }
 }
 
 .navigation .mobile-menu .mobile-nav .mobile-title-link .mobile-title {
@@ -116,6 +130,12 @@ button {
   text-align: center;
   font-weight: 300;
   color: #aaaaaa;
+}
+
+@media (min-width: 768px) {
+  .navigation .mobile-menu .mobile-nav .mobile-title-link .mobile-title {
+    font-size: 0.75rem;
+  }
 }
 
 .navigation .mobile-menu .mobile-nav .burger-btn {
@@ -132,6 +152,13 @@ button {
   width: 50px;
   height: 50px;
   margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .navigation .mobile-menu .mobile-nav .burger-btn {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .navigation .mobile-menu .mobile-nav .burger-btn .burger-btn-span {
@@ -196,6 +223,12 @@ button {
           transform: translateX(-1500px);
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+}
+
+@media (min-width: 768px) {
+  .navigation .mobile-menu .mobile-list {
+    padding: 25px;
+  }
 }
 
 .navigation .mobile-menu .mobile-list.active {
@@ -284,6 +317,12 @@ button {
   font-size: 1rem;
 }
 
+@media (min-width: 768px) {
+  .header .header-links-container {
+    font-size: 1.3rem;
+  }
+}
+
 .header .header-links-container .header-link {
   position: absolute;
   top: 25%;
@@ -325,6 +364,12 @@ button {
   color: #ddd;
 }
 
+@media (min-width: 768px) {
+  .about-me {
+    padding: 30px 100px;
+  }
+}
+
 .about-me .title-section {
   color: #ddd;
   padding: 20px 0;
@@ -339,11 +384,23 @@ button {
   color: #bcbcbc;
 }
 
+@media (min-width: 768px) {
+  .about-me .text-section {
+    text-align: justify;
+  }
+}
+
 .skills {
   width: 100%;
   min-height: 30vh;
   padding: 30px 20px 0 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+@media (min-width: 768px) {
+  .skills {
+    padding: 30px 100px;
+  }
 }
 
 .skills .title-section {
@@ -410,11 +467,35 @@ button {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
+@media (min-width: 768px) {
+  .projects {
+    padding: 30px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .projects .title-section {
   color: #ddd;
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .projects .title-section {
+    margin-bottom: 30px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .projects .project-box {
@@ -434,6 +515,12 @@ button {
   width: 100%;
   padding: 15px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+@media (min-width: 768px) {
+  .projects .project-box {
+    width: 90%;
+  }
 }
 
 .projects .project-box .title-project {
@@ -471,8 +558,14 @@ button {
 
 .contact {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 30px 100px;
+  }
 }
 
 .contact .title-section {
@@ -495,16 +588,41 @@ button {
           align-items: flex-start;
 }
 
+@media (min-width: 768px) {
+  .contact .contact-links-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 10px;
+  }
+}
+
 .contact .contact-link {
   text-align: center;
   color: #c4c4c4;
   font-size: 0.85rem;
 }
 
+@media (min-width: 768px) {
+  .contact .contact-link {
+    font-size: 1rem;
+  }
+}
+
 .contact .contact-awesome {
   width: 25px;
   padding: 5px 5px;
   font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .contact .contact-awesome {
+    font-size: 1rem;
+  }
 }
 
 .footer {
@@ -517,5 +635,11 @@ button {
 .footer .title-footer {
   padding: 15px 0 5px;
   color: #9d9d9d;
+}
+
+@media (min-width: 768px) {
+  .footer .title-footer {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

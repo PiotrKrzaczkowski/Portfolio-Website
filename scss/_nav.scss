@@ -3,16 +3,21 @@
   width: 100%;
   max-width: 1200px;
   z-index: 10;
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 50px;
+
     .mobile-nav {
       display: flex;
       justify-content: space-between;
       width: 100%;
       background: $main-background-bottom;
+      @media (min-width: 768px) {
+      }
+
       .mobile-title-link {
         display: flex;
         flex-direction: column;
@@ -21,12 +26,23 @@
         width: 150px;
         padding: 5px;
         line-height: 0.8rem;
+        @media (min-width: 768px) {
+          height: 80px;
+          width: 200px;
+        }
         .mobile-name {
           @include title(0.8rem, center, 300);
+          @media (min-width: 768px) {
+            font-size: 1rem;
+            line-height: 16px;
+          }
         }
         .mobile-title {
           @include title(0.6rem, center, 300);
           color: darken($font-color, 20%);
+          @media (min-width: 768px) {
+            font-size: 0.75rem;
+          }
         }
       }
       .burger-btn {
@@ -37,6 +53,10 @@
         width: 50px;
         height: 50px;
         margin-right: 5px;
+        @media (min-width: 768px) {
+          width: 80px;
+          height: 80px;
+        }
         .burger-btn-span {
           position: relative;
           width: 25px;
@@ -75,6 +95,9 @@
       background-color: rgba(0, 0, 0, 0.8);
       transform: translateX(-1500px);
       transition: ease-in-out 0.3s;
+      @media (min-width: 768px) {
+        padding: 25px;
+      }
     }
     .mobile-list.active {
       transform: translateX(0);

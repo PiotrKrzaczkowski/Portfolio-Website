@@ -1,7 +1,10 @@
 .contact {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   background: $main-background-top;
+  @media (min-width: 768px) {
+    padding: 30px 100px;
+  }
   .title-section {
     @include title-section;
   }
@@ -9,16 +12,27 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 10px;
+    }
   }
   .contact-link {
     text-align: center;
     color: darken($font-color, 10%);
     font-size: 0.85rem;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
   }
   .contact-awesome {
     width: 25px;
     padding: 5px 5px;
     font-size: 0.85rem;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
   }
 }
 .footer {
@@ -29,5 +43,8 @@
   .title-footer {
     padding: 15px 0 5px;
     color: darken($font-color, 25%);
+    @media (min-width: 768px) {
+      font-size: 0.9rem;
+    }
   }
 }

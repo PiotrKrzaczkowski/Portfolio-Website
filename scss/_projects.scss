@@ -2,8 +2,19 @@
   width: 100%;
   padding: 30px 20px 10px 20px;
   background: $main-background-bottom;
+  @media (min-width: 768px) {
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .title-section {
     @include title-section;
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+      align-self: flex-start;
+    }
   }
   .project-box {
     display: flex;
@@ -13,6 +24,9 @@
     width: 100%;
     padding: 15px;
     background: $main-background-top;
+    @media (min-width: 768px) {
+      width: 90%;
+    }
     .title-project {
       @include project-title;
     }

@@ -3,6 +3,9 @@
   padding: 30px 20px;
   background: $main-background-bottom;
   color: $font-color;
+  @media (min-width: 768px) {
+    padding: 30px 100px;
+  }
   .title-section {
     @include title-section;
   }
@@ -11,5 +14,8 @@
     font-size: 0.95rem;
     text-align: left;
     color: darken($font-color, 13%);
+    @media (min-width: 768px) {
+      text-align: justify;
+    }
   }
 }
