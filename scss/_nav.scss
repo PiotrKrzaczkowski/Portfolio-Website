@@ -1,0 +1,82 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  max-width: 1024px;
+  z-index: 10;
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    .mobile-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background: $main-background-bottom;
+      .mobile-title-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50px;
+        width: 150px;
+        padding: 5px;
+        line-height: 0.8rem;
+        .mobile-name {
+          @include title(0.8rem, center, 300);
+        }
+        .mobile-title {
+          @include title(0.6rem, center, 300);
+          color: darken($font-color, 20%);
+        }
+      }
+      .burger-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        .burger-btn-span {
+          position: relative;
+          width: 25px;
+          height: 2px;
+          background-color: darken($font-color, 15%);
+          transition: 0.3s;
+        }
+        .burger-btn-span::before,
+        .burger-btn-span::after {
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 2px;
+          background-color: darken($font-color, 15%);
+          transform: translateY(-5px);
+          transition: 0.3s;
+        }
+        .burger-btn-span::after {
+          transform: translateY(5px);
+        }
+      }
+      .burger-btn.active .burger-btn-span {
+        background-color: transparent;
+      }
+      .burger-btn.active .burger-btn-span::before {
+        transform: rotate(45deg);
+      }
+      .burger-btn.active .burger-btn-span::after {
+        transform: rotate(-45deg);
+      }
+    }
+    .mobile-list {
+      @include flex-center-column;
+      padding: 15px;
+      line-height: 2rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      transform: translateX(-400px);
+      transition: ease-in-out 0.3s;
+    }
+    .mobile-list.active {
+      transform: translateX(0);
+    }
+  }
+}

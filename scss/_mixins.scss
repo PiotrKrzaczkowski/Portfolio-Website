@@ -1,0 +1,17 @@
+@mixin title($fz, $txt-align, $font-weight) {
+  font-size: $fz;
+  text-align: $txt-align;
+  font-weight: $font-weight;
+}
+@mixin flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
