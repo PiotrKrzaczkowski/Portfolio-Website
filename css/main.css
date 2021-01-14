@@ -847,19 +847,19 @@ form {
 }
 
 .contact .contact-form ::-webkit-input-placeholder {
-  color: #ddd;
+  color: #9d9d9d;
 }
 
 .contact .contact-form :-ms-input-placeholder {
-  color: #ddd;
+  color: #9d9d9d;
 }
 
 .contact .contact-form ::-ms-input-placeholder {
-  color: #ddd;
+  color: #9d9d9d;
 }
 
 .contact .contact-form ::placeholder {
-  color: #ddd;
+  color: #9d9d9d;
 }
 
 .footer {
