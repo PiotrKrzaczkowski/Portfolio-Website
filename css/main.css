@@ -57,7 +57,7 @@ button {
 .main {
   position: relative;
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   min-height: 130vh;
 }
@@ -766,6 +766,7 @@ form {
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .contact .contact-links-wrapper {
@@ -775,6 +776,7 @@ form {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-top: 30px;
 }
 
 .contact .contact-link {
@@ -808,12 +810,14 @@ form {
 }
 
 .contact .contact-form {
+  width: 100%;
+  max-width: 550px;
   margin: 10px auto;
 }
 
 .contact .contact-form .form-control {
-  width: 90%;
-  margin-bottom: 10px;
+  width: 100%;
+  margin: 0 auto 10px;
   background: transparent;
   border: none;
   border-bottom: 1px solid #444444;
@@ -830,6 +834,7 @@ form {
 }
 
 .contact .contact-form .form-control.submit:hover {
+  cursor: pointer;
   -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(2, 2, 2, 0.8), inset -1px -1px 3px rgba(255, 255, 255, 0.05), inset 2px 2px 6px rgba(2, 2, 2, 0.5);
           box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(2, 2, 2, 0.8), inset -1px -1px 3px rgba(255, 255, 255, 0.05), inset 2px 2px 6px rgba(2, 2, 2, 0.5);
 }
