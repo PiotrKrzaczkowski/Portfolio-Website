@@ -1,0 +1,12 @@
+.about-me {
+  width: 100%;
+  padding: 30px 20px;
+  background: $main-background-bottom;
+  color: $font-color;
+  .title-section {
+    @include title-section;
+  }
+  .text-section {
+    color: darken($font-color, 13%);
+  }
+}

@@ -7,7 +7,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 a {
-  display: block;
+  // display: block;
   text-decoration: none;
   color: $font-color;
 }
@@ -22,5 +22,10 @@ button {
 .wrapper {
   width: 100%;
   min-height: 200vh;
-  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  // background: $main-background-top;
+}
+.main {
+  width: 100%;
+  max-width: $max-width;
+  min-height: 130vh;
 }
