@@ -22,11 +22,13 @@ button {
 .wrapper {
   width: 100%;
   min-height: 200vh;
-  // background: $main-background-top;
+  margin: 0 auto;
+  background: $main-background-bottom;
   overflow: hidden;
 }
 .main {
   width: 100%;
   max-width: $max-width;
+  margin: 0 auto;
   min-height: 130vh;
 }

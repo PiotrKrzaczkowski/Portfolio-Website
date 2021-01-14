@@ -27,3 +27,23 @@ burgerBtn.addEventListener("click", () => {
     }
   }
 });
+
+const desktopMenu = document.querySelector(".desktop-menu");
+const desktopNav = document.querySelector(".desktop-nav");
+const title = document.querySelector(".desktop-title-link");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    desktopMenu.classList.add("bcg");
+    desktopNav.classList.add("bcg");
+    title.classList.add("bcg");
+  } else {
+    desktopMenu.classList.remove("bcg");
+    desktopNav.classList.remove("bcg");
+    title.classList.remove("bcg");
+  }
+});
+
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 800,
+});
