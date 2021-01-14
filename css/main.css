@@ -56,7 +56,7 @@ button {
 
 .main {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1024px;
   margin: 0 auto;
   min-height: 130vh;
 }
@@ -562,6 +562,8 @@ button {
   padding: 25px 5px;
   font-size: 3rem;
   text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .skills .skills-wrapper .skill-font:hover {
@@ -619,6 +621,17 @@ button {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) {
+  .projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .projects .title-section {
   color: #ddd;
   padding: 20px 0;
@@ -631,6 +644,12 @@ button {
     margin-bottom: 30px;
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .projects .title-section {
+    width: 100%;
   }
 }
 
@@ -659,6 +678,14 @@ button {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1024px) {
+  .projects .project-box {
+    width: 45%;
+    height: 350px;
+    margin: 5px auto;
+  }
+}
+
 .projects .project-box .title-project {
   padding: 5px;
   letter-spacing: 1px;
@@ -667,7 +694,8 @@ button {
 }
 
 .projects .project-box .project-img {
-  width: 100%;
+  width: 90%;
+  height: 50%;
   padding: 10px;
 }
 

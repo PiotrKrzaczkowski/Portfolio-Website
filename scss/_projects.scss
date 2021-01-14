@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   .title-section {
@@ -14,6 +18,9 @@
     @media (min-width: 768px) {
       margin-bottom: 30px;
       align-self: flex-start;
+      @media (min-width: 1024px) {
+        width: 100%;
+      }
     }
   }
   .project-box {
@@ -26,12 +33,18 @@
     background: $main-background-top;
     @media (min-width: 768px) {
       width: 90%;
+      @media (min-width: 1024px) {
+        width: 45%;
+        height: 350px;
+        margin: 5px auto;
+      }
     }
     .title-project {
       @include project-title;
     }
     .project-img {
-      width: 100%;
+      width: 90%;
+      height: 50%;
       padding: 10px;
     }
     .project-btn-box {
