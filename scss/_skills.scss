@@ -9,11 +9,39 @@
   .skills-wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
     width: 100%;
-    color: white;
-    .skill-box {
-      display: flex;
-      flex-direction: column;
+    color: darken($font-color, 10%);
+    .skill-font {
+      width: 25%;
+      padding: 10px 5px;
+      font-size: 3rem;
+      text-align: center;
+    }
+    .skill-font:hover {
+      cursor: pointer;
+      color: rgb(250, 65, 65);
+    }
+    .skill-font:hover:nth-child(2) {
+      color: rgb(125, 125, 250);
+    }
+    .skill-font:hover:nth-child(3) {
+      color: rgb(204, 102, 153);
+    }
+    .skill-font:hover:nth-child(4) {
+      color: rgb(240, 219, 79);
+    }
+    .skill-font:hover:nth-child(5) {
+      color: rgb(97, 219, 251);
+    }
+    .skill-font:hover:nth-child(6) {
+      color: rgb(96, 44, 80);
+    }
+    .skill-font:hover:nth-child(7) {
+      color: rgb(243, 79, 41);
+    }
+    .skill-font:hover:nth-child(8) {
+      color: rgb(204, 53, 52);
     }
   }
 }

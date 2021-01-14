@@ -18,7 +18,9 @@
 
 @mixin title-section {
   color: $font-color;
-  padding: 10px 0;
+  padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+}
+@mixin skill-box {
 }
