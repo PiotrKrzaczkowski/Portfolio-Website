@@ -44,6 +44,12 @@ document.addEventListener("scroll", () => {
   }
 });
 
+const linksContainer = document.querySelector(".header-links-container");
+
+setTimeout(() => {
+  linksContainer.classList.add("visible");
+}, 500);
+
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,
 });

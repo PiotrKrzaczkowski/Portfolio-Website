@@ -134,13 +134,15 @@
     transition: 0.5s;
 
     .desktop-name {
-      line-height: 1.25rem;
+      line-height: 1.2rem;
       font-size: 0.8rem;
       font-weight: 400;
+      letter-spacing: 1px;
       color: $hover-color;
     }
     .desktop-title {
-      font-size: 0.5rem;
+      margin-top: -4px;
+      font-size: 0.6rem;
       color: darken($font-color, 20%);
     }
   }

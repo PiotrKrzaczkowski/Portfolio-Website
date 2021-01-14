@@ -297,14 +297,16 @@ form {
 }
 
 .navigation .desktop-title-link .desktop-name {
-  line-height: 1.25rem;
+  line-height: 1.2rem;
   font-size: 0.8rem;
   font-weight: 400;
+  letter-spacing: 1px;
   color: white;
 }
 
 .navigation .desktop-title-link .desktop-title {
-  font-size: 0.5rem;
+  margin-top: -4px;
+  font-size: 0.6rem;
   color: #aaaaaa;
 }
 
@@ -425,6 +427,9 @@ form {
   width: 100%;
   height: 100%;
   font-size: 1rem;
+  opacity: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 @media (min-width: 768px) {
@@ -444,7 +449,7 @@ form {
 @media (min-width: 1024px) {
   .header .header-links-container .header-link {
     top: 30%;
-    left: 30%;
+    left: 35%;
   }
 }
 
@@ -455,13 +460,13 @@ form {
 
 .header .header-links-container .header-link:nth-child(2) {
   top: 42%;
-  left: 77%;
+  left: 72%;
 }
 
 @media (min-width: 1024px) {
   .header .header-links-container .header-link:nth-child(2) {
-    top: 39%;
-    left: 64%;
+    top: 37%;
+    left: 62%;
   }
 }
 
@@ -472,8 +477,8 @@ form {
 
 @media (min-width: 1024px) {
   .header .header-links-container .header-link:nth-child(3) {
-    top: 60%;
-    left: 35%;
+    top: 58%;
+    left: 39%;
   }
 }
 
@@ -484,8 +489,8 @@ form {
 
 @media (min-width: 1024px) {
   .header .header-links-container .header-link:nth-child(4) {
-    top: 70%;
-    left: 60%;
+    top: 65%;
+    left: 59%;
   }
 }
 
@@ -508,6 +513,10 @@ form {
   color: white;
   -webkit-box-shadow: 0 0 8px 5px white;
           box-shadow: 0 0 8px 5px white;
+}
+
+.header .header-links-container.visible {
+  opacity: 1;
 }
 
 .about-me {
@@ -701,7 +710,9 @@ form {
   width: 100%;
   padding: 15px;
   border-radius: 4px;
-  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (min-width: 768px) {
@@ -713,7 +724,7 @@ form {
 @media (min-width: 768px) and (min-width: 1024px) {
   .projects .project-box {
     width: 45%;
-    height: 350px;
+    height: 330px;
     margin: 5px auto;
   }
 }
@@ -737,7 +748,7 @@ form {
 }
 
 .projects .project-box .btn-link-project {
-  padding: 0 15px;
+  margin: 0 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -751,6 +762,14 @@ form {
   padding-bottom: 5px;
   font-size: 0.75rem;
   color: #c4c4c4;
+}
+
+.projects .project-box:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.projects .project-box:hover .btn-link-project {
+  border-bottom: 1px solid #ddd;
 }
 
 .contact {
@@ -816,7 +835,7 @@ form {
 
 .contact .contact-form {
   width: 100%;
-  max-width: 550px;
+  max-width: 450px;
   margin: 10px auto;
   display: -webkit-box;
   display: -ms-flexbox;
