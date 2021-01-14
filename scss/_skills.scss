@@ -1,0 +1,19 @@
+.skills {
+  width: 100%;
+  min-height: 30vh;
+  padding: 30px 20px;
+  background: $main-background-top;
+  .title-section {
+    @include title-section;
+  }
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    .skill-box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

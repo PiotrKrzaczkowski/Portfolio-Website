@@ -49,12 +49,23 @@ button {
 .wrapper {
   width: 100%;
   min-height: 200vh;
+  overflow: hidden;
 }
 
 .main {
   width: 100%;
   max-width: 1200px;
   min-height: 130vh;
+}
+
+i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .navigation {
@@ -325,12 +336,50 @@ button {
 }
 
 .about-me .title-section {
+  color: #ddd;
   padding: 10px 0;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 .about-me .text-section {
+  line-height: 1.35rem;
+  font-size: 0.95rem;
+  text-align: left;
   color: #bcbcbc;
+}
+
+.skills {
+  width: 100%;
+  min-height: 30vh;
+  padding: 30px 20px;
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+.skills .title-section {
+  color: #ddd;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.skills .skills-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  color: white;
+}
+
+.skills .skills-wrapper .skill-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,6 +7,9 @@
     @include title-section;
   }
   .text-section {
+    line-height: 1.35rem;
+    font-size: 0.95rem;
+    text-align: left;
     color: darken($font-color, 13%);
   }
 }
