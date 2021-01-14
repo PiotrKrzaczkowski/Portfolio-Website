@@ -195,14 +195,48 @@
         </div>
         <div class="contact" id="contact">
           <p class="title-section">Contact</p>
+
+          <form
+            action="mailto:slimshade93@wp.pl"
+            class="contact-form"
+            id="contact-form"
+          >
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Enter your name..."
+            />
+
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="Enter your e-mail adress..."
+            />
+
+            <textarea
+              name="message"
+              rows="6"
+              class="form-control message"
+              placeholder="Enter your text here..."
+            ></textarea>
+
+            <input
+              type="submit"
+              class="form-control submit"
+              value="Send message"
+              required
+            />
+          </form>
+
           <div class="contact-links-wrapper">
-            <a href="mailto:slimshade93@wp.pl" class="contact-link"
-              ><i class="contact-awesome fas fa-envelope"></i>slimshade93@wp.pl
-            </a>
-            <a href="#" class="contact-link"
+            <a href="https://github.com/PiotrKrzaczkowski" class="contact-link"
               ><i class="contact-awesome fab fa-github"></i>Github
             </a>
-            <a href="#" class="contact-link"
+            <a
+              href="https://www.linkedin.com/in/piotr-krzaczkowski-8423871b2/"
+              class="contact-link"
               ><i class="contact-awesome fab fa-linkedin"></i>LinkedIn
             </a>
           </div>

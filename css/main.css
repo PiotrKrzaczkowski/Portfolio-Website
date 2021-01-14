@@ -62,6 +62,10 @@ button {
   min-height: 130vh;
 }
 
+form {
+  display: block;
+}
+
 .navigation {
   position: fixed;
   width: 100%;
@@ -720,6 +724,7 @@ button {
   width: 90%;
   height: 50%;
   padding: 10px;
+  border-radius: 13px;
 }
 
 .projects .project-box .project-btn-box {
@@ -767,26 +772,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media (min-width: 768px) {
-  .contact .contact-links-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-top: 10px;
-  }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contact .contact-link {
@@ -817,6 +805,61 @@ button {
   .contact .contact-awesome {
     font-size: 1rem;
   }
+}
+
+.contact .contact-form {
+  margin: 10px auto;
+}
+
+.contact .contact-form .form-control {
+  width: 90%;
+  margin-bottom: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #444444;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.contact .contact-form .form-control.submit {
+  border: none;
+  padding: 5px;
+  color: #ddd;
+  -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
+          box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.contact .contact-form .form-control.submit:hover {
+  -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(2, 2, 2, 0.8), inset -1px -1px 3px rgba(255, 255, 255, 0.05), inset 2px 2px 6px rgba(2, 2, 2, 0.5);
+          box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(2, 2, 2, 0.8), inset -1px -1px 3px rgba(255, 255, 255, 0.05), inset 2px 2px 6px rgba(2, 2, 2, 0.5);
+}
+
+.contact .contact-form .form-control.submit:checked {
+  -webkit-box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1), inset 2px 2px 6px #020202;
+          box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1), inset 2px 2px 6px #020202;
+  text-shadow: 0 0 5px #00fff1, 0 0 20px #00fff1;
+}
+
+.contact .contact-form .form-control.message {
+  color: #ddd;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact .contact-form ::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+.contact .contact-form :-ms-input-placeholder {
+  color: #ddd;
+}
+
+.contact .contact-form ::-ms-input-placeholder {
+  color: #ddd;
+}
+
+.contact .contact-form ::placeholder {
+  color: #ddd;
 }
 
 .footer {
