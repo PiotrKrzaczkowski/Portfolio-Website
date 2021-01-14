@@ -58,17 +58,6 @@ button {
   min-height: 130vh;
 }
 
-i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 2.3rem;
-}
-
 .navigation {
   position: fixed;
   width: 100%;
@@ -203,8 +192,8 @@ i {
   padding: 15px;
   line-height: 2rem;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: translateX(-400px);
-          transform: translateX(-400px);
+  -webkit-transform: translateX(-1500px);
+          transform: translateX(-1500px);
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
@@ -298,22 +287,22 @@ i {
 .header .header-links-container .header-link {
   position: absolute;
   top: 25%;
-  left: 33%;
+  left: 20%;
 }
 
 .header .header-links-container .header-link:nth-child(2) {
-  top: 37%;
-  left: 67%;
+  top: 42%;
+  left: 77%;
 }
 
 .header .header-links-container .header-link:nth-child(3) {
-  top: 47%;
-  left: 35%;
+  top: 52%;
+  left: 25%;
 }
 
 .header .header-links-container .header-link:nth-child(4) {
-  top: 65%;
-  left: 57%;
+  top: 72%;
+  left: 65%;
 }
 
 .header .header-links-container .header-link::after {
@@ -413,5 +402,136 @@ i {
 
 .skills .skills-wrapper .skill-font:hover:nth-child(8) {
   color: #cc3534;
+}
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.projects .title-section {
+  color: #ddd;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.projects .project-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 270px;
+  padding: 15px;
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+.projects .project-box .title-project {
+  padding: 5px;
+  letter-spacing: 1px;
+  color: #ddd;
+  font-weight: 500;
+}
+
+.projects .project-box .project-img {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/Metronome.jpg);
+}
+
+.projects .project-box .project-img:nth-child(2) {
+  background-image: url(../img/AccoPiano.jpg);
+}
+
+.projects .project-box .project-img:nth-child(3) {
+  background-image: url(../img/DeepBreath.jpg);
+}
+
+.projects .project-box .project-img:nth-child(4) {
+  background-image: url(../img/Metronome.jpg);
+}
+
+.projects .project-box .project-btn-box {
+  margin: 10px;
+}
+
+.projects .project-box .btn-link-project {
+  padding: 0 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projects .project-box .btn-link-project:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 10px #ddd;
+}
+
+.projects .project-box .technologies {
+  padding-bottom: 5px;
+  font-size: 0.75rem;
+  color: #c4c4c4;
+}
+
+.contact {
+  width: 100%;
+  min-height: 30vh;
+  padding: 30px 20px;
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+.contact .title-section {
+  color: #ddd;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.contact .contact-links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact .contact-link {
+  text-align: center;
+  color: #c4c4c4;
+  font-size: 0.85rem;
+}
+
+.contact .contact-awesome {
+  width: 25px;
+  padding: 5px 5px;
+  font-size: 0.85rem;
+}
+
+.footer {
+  width: 100%;
+  color: #b7b7b7;
+  text-align: center;
+  font-size: 0.75rem;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 /*# sourceMappingURL=main.css.map */

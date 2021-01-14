@@ -1,0 +1,31 @@
+.contact {
+  width: 100%;
+  min-height: 30vh;
+  padding: 30px 20px;
+  background: $main-background-top;
+  .title-section {
+    @include title-section;
+  }
+  .contact-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-link {
+    text-align: center;
+    color: darken($font-color, 10%);
+    font-size: 0.85rem;
+  }
+  .contact-awesome {
+    width: 25px;
+    padding: 5px 5px;
+    font-size: 0.85rem;
+  }
+}
+.footer {
+  width: 100%;
+  color: darken($font-color, 15%);
+  text-align: center;
+  font-size: 0.75rem;
+  background: $main-background-bottom;
+}
