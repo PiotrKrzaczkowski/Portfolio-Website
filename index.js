@@ -20,11 +20,11 @@ burgerBtn.addEventListener("click", () => {
     burgerBtn.classList.add("active");
     open = true;
   } else {
-    // if (open) {
-    ul.classList.remove("active");
-    burgerBtn.classList.remove("active");
-    open = false;
-    // }
+    if (open) {
+      ul.classList.remove("active");
+      burgerBtn.classList.remove("active");
+      open = false;
+    }
   }
 });
 const linksContainer = document.querySelector(".header-links-container");

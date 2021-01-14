@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      background: $main-background-bottom;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
       @media (min-width: 768px) {
       }
 
@@ -93,11 +93,16 @@
     }
     .mobile-list {
       @include flex-center-column;
+      position: fixed;
+      top: 50px;
+      left: 0;
+      width: 100%;
       padding: 15px;
       line-height: 2rem;
       background-color: rgba(0, 0, 0, 0.8);
       transform: translateX(-1500px);
       transition: ease-in-out 0.3s;
+
       @media (min-width: 768px) {
         padding: 25px;
       }
