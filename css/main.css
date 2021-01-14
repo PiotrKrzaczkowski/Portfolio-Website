@@ -342,7 +342,7 @@ button {
 .skills {
   width: 100%;
   min-height: 30vh;
-  padding: 30px 20px;
+  padding: 30px 20px 0 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
 
@@ -366,7 +366,7 @@ button {
 
 .skills .skills-wrapper .skill-font {
   width: 25%;
-  padding: 10px 5px;
+  padding: 25px 5px;
   font-size: 3rem;
   text-align: center;
 }
@@ -406,8 +406,7 @@ button {
 
 .projects {
   width: 100%;
-  min-height: 100vh;
-  padding: 30px 20px;
+  padding: 30px 20px 10px 20px;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
@@ -433,7 +432,6 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 270px;
   padding: 15px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
@@ -447,24 +445,7 @@ button {
 
 .projects .project-box .project-img {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/Metronome.jpg);
-}
-
-.projects .project-box .project-img:nth-child(2) {
-  background-image: url(../img/AccoPiano.jpg);
-}
-
-.projects .project-box .project-img:nth-child(3) {
-  background-image: url(../img/DeepBreath.jpg);
-}
-
-.projects .project-box .project-img:nth-child(4) {
-  background-image: url(../img/Metronome.jpg);
+  padding: 10px;
 }
 
 .projects .project-box .project-btn-box {
@@ -490,8 +471,7 @@ button {
 
 .contact {
   width: 100%;
-  min-height: 30vh;
-  padding: 30px 20px;
+  padding: 0 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
 
@@ -529,9 +509,13 @@ button {
 
 .footer {
   width: 100%;
-  color: #b7b7b7;
   text-align: center;
   font-size: 0.75rem;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.footer .title-footer {
+  padding: 15px 0 5px;
+  color: #9d9d9d;
 }
 /*# sourceMappingURL=main.css.map */

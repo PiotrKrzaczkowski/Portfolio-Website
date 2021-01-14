@@ -1,7 +1,6 @@
 .contact {
   width: 100%;
-  min-height: 30vh;
-  padding: 30px 20px;
+  padding: 0 20px;
   background: $main-background-top;
   .title-section {
     @include title-section;
@@ -24,8 +23,11 @@
 }
 .footer {
   width: 100%;
-  color: darken($font-color, 15%);
   text-align: center;
   font-size: 0.75rem;
   background: $main-background-bottom;
+  .title-footer {
+    padding: 15px 0 5px;
+    color: darken($font-color, 25%);
+  }
 }

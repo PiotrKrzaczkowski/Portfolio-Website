@@ -1,7 +1,7 @@
 .skills {
   width: 100%;
   min-height: 30vh;
-  padding: 30px 20px;
+  padding: 30px 20px 0 20px;
   background: $main-background-top;
   .title-section {
     @include title-section;
@@ -14,7 +14,7 @@
     color: darken($font-color, 10%);
     .skill-font {
       width: 25%;
-      padding: 10px 5px;
+      padding: 25px 5px;
       font-size: 3rem;
       text-align: center;
     }
