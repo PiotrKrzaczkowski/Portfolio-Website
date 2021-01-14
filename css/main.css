@@ -300,6 +300,7 @@ form {
   line-height: 1.25rem;
   font-size: 0.8rem;
   font-weight: 400;
+  color: white;
 }
 
 .navigation .desktop-title-link .desktop-title {
@@ -340,7 +341,8 @@ form {
 }
 
 .navigation .desktop-link:hover {
-  text-shadow: 0px 0px 5px #ddd;
+  color: white;
+  text-shadow: 0px 0px 1px white;
 }
 
 .header {
@@ -447,7 +449,8 @@ form {
 }
 
 .header .header-links-container .header-link:hover {
-  text-shadow: 0px 0px 5px #ddd;
+  color: white;
+  text-shadow: 0px 0px 1px white;
 }
 
 .header .header-links-container .header-link:nth-child(2) {
@@ -491,17 +494,18 @@ form {
   position: absolute;
   top: -10px;
   left: -25px;
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background-color: #ddd;
   -webkit-box-shadow: 0 0 8px 1px white;
           box-shadow: 0 0 8px 1px white;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .header .header-links-container .header-link:hover.header-link::after {
+  color: white;
   -webkit-box-shadow: 0 0 8px 5px white;
           box-shadow: 0 0 8px 5px white;
 }
@@ -521,7 +525,7 @@ form {
 }
 
 .about-me .title-section {
-  color: #ddd;
+  color: white;
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
@@ -561,7 +565,7 @@ form {
 }
 
 .skills .title-section {
-  color: #ddd;
+  color: white;
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
@@ -660,7 +664,7 @@ form {
 }
 
 .projects .title-section {
-  color: #ddd;
+  color: white;
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
@@ -696,6 +700,7 @@ form {
           justify-content: center;
   width: 100%;
   padding: 15px;
+  border-radius: 4px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
 
@@ -762,7 +767,7 @@ form {
 }
 
 .contact .title-section {
-  color: #ddd;
+  color: white;
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
@@ -813,10 +818,18 @@ form {
   width: 100%;
   max-width: 550px;
   margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact .contact-form .form-control {
   width: 100%;
+  padding: 5px;
   margin: 0 auto 10px;
   background: transparent;
   border: none;
@@ -828,6 +841,8 @@ form {
 .contact .contact-form .form-control.submit {
   border: none;
   padding: 5px;
+  width: 60%;
+  margin: 0 auto;
   color: #ddd;
   -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
           box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
@@ -852,19 +867,23 @@ form {
 }
 
 .contact .contact-form ::-webkit-input-placeholder {
-  color: #9d9d9d;
+  padding: 5px;
+  color: #d0d0d0;
 }
 
 .contact .contact-form :-ms-input-placeholder {
-  color: #9d9d9d;
+  padding: 5px;
+  color: #d0d0d0;
 }
 
 .contact .contact-form ::-ms-input-placeholder {
-  color: #9d9d9d;
+  padding: 5px;
+  color: #d0d0d0;
 }
 
 .contact .contact-form ::placeholder {
-  color: #9d9d9d;
+  padding: 5px;
+  color: #d0d0d0;
 }
 
 .footer {
