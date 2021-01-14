@@ -20,17 +20,21 @@ burgerBtn.addEventListener("click", () => {
     burgerBtn.classList.add("active");
     open = true;
   } else {
-    if (open) {
-      ul.classList.remove("active");
-      burgerBtn.classList.remove("active");
-      open = false;
-    }
+    // if (open) {
+    ul.classList.remove("active");
+    burgerBtn.classList.remove("active");
+    open = false;
+    // }
   }
 });
-
+const linksContainer = document.querySelector(".header-links-container");
 const desktopMenu = document.querySelector(".desktop-menu");
 const desktopNav = document.querySelector(".desktop-nav");
 const title = document.querySelector(".desktop-title-link");
+
+setTimeout(() => {
+  linksContainer.classList.add("visible");
+}, 500);
 
 document.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -42,13 +46,13 @@ document.addEventListener("scroll", () => {
     desktopNav.classList.remove("bcg");
     title.classList.remove("bcg");
   }
+
+  if (window.scrollY > 130) {
+    linksContainer.classList.remove("visible");
+  } else {
+    linksContainer.classList.add("visible");
+  }
 });
-
-const linksContainer = document.querySelector(".header-links-container");
-
-setTimeout(() => {
-  linksContainer.classList.add("visible");
-}, 500);
 
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,
