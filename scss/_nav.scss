@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   max-width: 1200px;
-  z-index: 10;
+  z-index: 15;
 
   .mobile-menu {
     display: flex;
@@ -113,11 +113,13 @@
       justify-content: space-around;
       width: 100vw;
       transition: 0.5s;
+      .desktop-menu.bcg {
+        display: flex;
+      }
+      z-index: 10;
     }
   }
-  .desktop-menu.bcg {
-    display: flex;
-  }
+
   .desktop-menu.bcg {
     background: #090a0f;
   }

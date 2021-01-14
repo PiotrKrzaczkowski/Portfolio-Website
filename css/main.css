@@ -50,13 +50,14 @@ button {
   width: 100%;
   min-height: 200vh;
   margin: 0 auto;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #121a24 0%, #090a0f 100%);
   overflow: hidden;
 }
 
 .main {
+  position: relative;
   width: 100%;
-  max-width: 1024px;
+  max-width: 900px;
   margin: 0 auto;
   min-height: 130vh;
 }
@@ -65,7 +66,7 @@ button {
   position: fixed;
   width: 100%;
   max-width: 1200px;
-  z-index: 10;
+  z-index: 15;
 }
 
 .navigation .mobile-menu {
@@ -259,13 +260,13 @@ button {
     width: 100vw;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    z-index: 10;
   }
-}
-
-.navigation .desktop-menu.bcg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  .navigation .desktop-menu .desktop-menu.bcg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .navigation .desktop-menu.bcg {
@@ -344,6 +345,7 @@ button {
   width: 100%;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
+  z-index: 10;
 }
 
 .header .stars-container {
@@ -491,6 +493,13 @@ button {
   background-color: #ddd;
   -webkit-box-shadow: 0 0 8px 1px white;
           box-shadow: 0 0 8px 1px white;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.header .header-links-container .header-link:hover.header-link::after {
+  -webkit-box-shadow: 0 0 8px 5px white;
+          box-shadow: 0 0 8px 5px white;
 }
 
 .about-me {
@@ -498,6 +507,7 @@ button {
   padding: 30px 20px;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   color: #ddd;
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
@@ -511,6 +521,12 @@ button {
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .about-me .title-section {
+    margin-bottom: 25px;
+  }
 }
 
 .about-me .text-section {
@@ -531,6 +547,7 @@ button {
   min-height: 30vh;
   padding: 30px 20px 0 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
@@ -544,6 +561,12 @@ button {
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .skills .title-section {
+    margin-bottom: 25px;
+  }
 }
 
 .skills .skills-wrapper {
@@ -724,6 +747,7 @@ button {
   width: 100%;
   padding: 0 20px 20px 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
@@ -769,12 +793,18 @@ button {
   text-align: center;
   color: #c4c4c4;
   font-size: 0.85rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 @media (min-width: 768px) {
   .contact .contact-link {
     font-size: 1rem;
   }
+}
+
+.contact .contact-link:hover {
+  text-shadow: 0 0 5px #ddd;
 }
 
 .contact .contact-awesome {

@@ -23,10 +23,15 @@ button {
   width: 100%;
   min-height: 200vh;
   margin: 0 auto;
-  background: $main-background-bottom;
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(18, 26, 36) 0%,
+    #090a0f 100%
+  );
   overflow: hidden;
 }
 .main {
+  position: relative;
   width: 100%;
   max-width: $max-width;
   margin: 0 auto;
