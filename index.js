@@ -1,32 +1,36 @@
 // HANDLE BURGER MENU BUTTON AND MENU LINKS
-const ul = document.querySelector(".mobile-list");
+const mobileMenuList = document.querySelector(".mobile-list");
 const burgerBtn = document.querySelector(".burger-btn");
 const ulBtns = document.querySelectorAll(".mobile-menu a");
 let open = false;
 
+// SIDE LIST LINKS TOGGLE
 ulBtns.forEach((i) =>
   i.addEventListener("click", () => {
     if (open) {
-      ul.classList.remove("active");
+      mobileMenuList.classList.remove("active");
       burgerBtn.classList.remove("active");
       open = false;
     }
   })
 );
-
+// BURGER MENU BUTTON TOGGLE LIST AND BTN ANIMATION
 burgerBtn.addEventListener("click", () => {
   if (!open) {
-    ul.classList.add("active");
+    mobileMenuList.classList.add("active");
     burgerBtn.classList.add("active");
     open = true;
   } else {
     if (open) {
-      ul.classList.remove("active");
+      mobileMenuList.classList.remove("active");
       burgerBtn.classList.remove("active");
       open = false;
     }
   }
 });
+
+// ANIMATIONS ON SCROLL
+
 const linksContainer = document.querySelector(".header-links-container");
 const desktopMenu = document.querySelector(".desktop-menu");
 const desktopNav = document.querySelector(".desktop-nav");
@@ -53,6 +57,22 @@ document.addEventListener("scroll", () => {
     linksContainer.classList.add("visible");
   }
 });
+
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let revealTop = reveals[i].getBoundingClientRect().top;
+    let revealPoint = 50;
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("slide");
+    } else {
+      reveals[i].classList.remove("slide");
+    }
+  }
+}
 
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,

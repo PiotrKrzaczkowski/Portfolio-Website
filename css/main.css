@@ -245,6 +245,7 @@ form {
 
 @media (min-width: 768px) {
   .navigation .mobile-menu .mobile-list {
+    top: 80px;
     padding: 25px;
   }
 }
@@ -768,6 +769,19 @@ form {
   color: #c4c4c4;
 }
 
+.projects .project-box.reveal {
+  position: relative;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+}
+
+.projects .project-box.reveal.slide {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
 .projects .project-box:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -780,6 +794,8 @@ form {
   width: 100%;
   padding: 0 20px 20px 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   z-index: 10;
 }
 
@@ -822,6 +838,7 @@ form {
 }
 
 .contact .contact-link:hover {
+  color: white;
   text-shadow: 0 0 5px #ddd;
 }
 
@@ -925,5 +942,18 @@ form {
   .footer .title-footer {
     font-size: 0.9rem;
   }
+}
+
+.contact.reveal {
+  position: relative;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+}
+
+.contact.reveal.slide {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
