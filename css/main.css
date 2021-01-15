@@ -824,6 +824,8 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contact .contact-form .form-control {
@@ -926,6 +928,19 @@ form {
   }
 }
 
+.contact .contact-form.reveal {
+  position: relative;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+}
+
+.contact .contact-form.reveal.slide {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .footer {
   width: 100%;
   text-align: center;
@@ -942,18 +957,5 @@ form {
   .footer .title-footer {
     font-size: 0.9rem;
   }
-}
-
-.contact.reveal {
-  position: relative;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  opacity: 0;
-}
-
-.contact.reveal.slide {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
