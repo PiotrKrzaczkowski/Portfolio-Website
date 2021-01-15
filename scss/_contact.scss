@@ -11,32 +11,7 @@
     @include title-section;
     margin-bottom: 30px;
   }
-  .contact-links-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 30px;
-  }
-  .contact-link {
-    text-align: center;
-    color: darken($font-color, 10%);
-    font-size: 0.85rem;
-    transition: 0.3s ease-in-out;
-    @media (min-width: 768px) {
-      font-size: 1rem;
-    }
-  }
-  .contact-link:hover {
-    color: $hover-color;
-    text-shadow: 0 0 5px $font-color;
-  }
-  .contact-awesome {
-    width: 25px;
-    padding: 5px 5px;
-    font-size: 0.85rem;
-    @media (min-width: 768px) {
-      font-size: 1rem;
-    }
-  }
+
   .contact-form {
     width: 100%;
     max-width: 450px;
@@ -82,6 +57,32 @@
     ::placeholder {
       padding: 5px;
       color: darken($font-color, 5%);
+    }
+  }
+  .contact-links-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .contact-link {
+    text-align: center;
+    color: darken($font-color, 10%);
+    font-size: 0.85rem;
+    transition: 0.3s ease-in-out;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+  .contact-link:hover {
+    color: $hover-color;
+    text-shadow: 0 0 5px $font-color;
+  }
+  .contact-awesome {
+    width: 25px;
+    padding: 5px 5px;
+    font-size: 0.85rem;
+    @media (min-width: 768px) {
+      font-size: 1rem;
     }
   }
 }
