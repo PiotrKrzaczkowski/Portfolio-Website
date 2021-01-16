@@ -98,6 +98,8 @@
 }
 .footer {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
   font-size: 0.75rem;
   background: $main-background-bottom;
@@ -105,7 +107,7 @@
     padding: 15px 0 5px;
     color: darken($font-color, 25%);
     @media (min-width: 768px) {
-      font-size: 0.9rem;
+      font-size: 0.65rem;
     }
   }
 }

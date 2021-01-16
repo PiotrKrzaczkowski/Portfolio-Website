@@ -83,7 +83,8 @@
     opacity: 1;
   }
   .project-box:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.02);
   }
   .project-box:hover .btn-link-project {
     border-bottom: 1px solid $font-color;
