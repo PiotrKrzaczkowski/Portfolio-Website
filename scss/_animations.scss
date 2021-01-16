@@ -6,3 +6,19 @@
     transform: translateY(-2000px);
   }
 }
+
+@keyframes start {
+  0% {
+    width: 100%;
+  }
+  25% {
+    left: 50%;
+    transform: translateY(0);
+    width: 0.05%;
+  }
+  100% {
+    transform: translateY(-100vh);
+    left: 50%;
+    width: 0.05%;
+  }
+}

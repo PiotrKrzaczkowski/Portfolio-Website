@@ -20,6 +20,42 @@
   }
 }
 
+@-webkit-keyframes start {
+  0% {
+    width: 100%;
+  }
+  25% {
+    left: 50%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 0.05%;
+  }
+  100% {
+    -webkit-transform: translateY(-100vh);
+            transform: translateY(-100vh);
+    left: 50%;
+    width: 0.05%;
+  }
+}
+
+@keyframes start {
+  0% {
+    width: 100%;
+  }
+  25% {
+    left: 50%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 0.05%;
+  }
+  100% {
+    -webkit-transform: translateY(-100vh);
+            transform: translateY(-100vh);
+    left: 50%;
+    width: 0.05%;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -49,9 +85,23 @@ button {
 .wrapper {
   width: 100%;
   min-height: 200vh;
+  position: relative;
   margin: 0 auto;
   background: radial-gradient(ellipse at bottom, #121a24 0%, #090a0f 100%);
   overflow: hidden;
+}
+
+.wrapper .wrapper-start-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  z-index: 9999;
+  -webkit-animation: start 1.2s ease-in-out forwards;
+          animation: start 1.2s ease-in-out forwards;
 }
 
 .main {
@@ -746,6 +796,13 @@ form {
   height: 50%;
   padding: 10px;
   border-radius: 13px;
+}
+
+@media (min-width: 1024px) {
+  .projects .project-box .project-img {
+    width: 300px;
+    height: 200px;
+  }
 }
 
 .projects .project-box .project-btn-box {

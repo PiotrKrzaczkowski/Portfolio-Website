@@ -77,3 +77,7 @@ function reveal() {
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,
 });
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};

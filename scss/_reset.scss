@@ -22,6 +22,7 @@ button {
 .wrapper {
   width: 100%;
   min-height: 200vh;
+  position: relative;
   margin: 0 auto;
   background: radial-gradient(
     ellipse at bottom,
@@ -29,6 +30,17 @@ button {
     #090a0f 100%
   );
   overflow: hidden;
+  .wrapper-start-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: $main-background-bottom;
+    z-index: 9999;
+    animation: start 1.2s ease-in-out forwards;
+  }
 }
 .main {
   position: relative;
