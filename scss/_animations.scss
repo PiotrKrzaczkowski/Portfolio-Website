@@ -22,3 +22,8 @@
     width: 0.05%;
   }
 }
+
+.title-section.slide.title-section::after {
+  transform: translateX(30px);
+  opacity: 1;
+}

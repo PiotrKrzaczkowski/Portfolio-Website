@@ -74,6 +74,22 @@ function reveal() {
   }
 }
 
+function titleAfterSlide() {
+  const titleSection = document.querySelectorAll(".title-section");
+  for (let i = 0; i < titleSection.length; i++) {
+    let windowHeight = window.innerHeight;
+    let revealTop = titleSection[i].getBoundingClientRect().top;
+    let revealBottom = titleSection[i].getBoundingClientRect().bottom;
+    const revealPoint = 50;
+    if (revealTop < windowHeight - revealPoint) {
+      titleSection[i].classList.add("slide");
+    } else {
+      titleSection[i].classList.remove("slide");
+    }
+  }
+}
+window.addEventListener("scroll", titleAfterSlide);
+
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,
 });

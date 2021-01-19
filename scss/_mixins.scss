@@ -21,6 +21,19 @@
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateX(2000px);
+    width: 100px;
+    height: 1px;
+    background-color: darken($font-color, 15%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+  }
 }
 @mixin project-title {
   padding: 5px;

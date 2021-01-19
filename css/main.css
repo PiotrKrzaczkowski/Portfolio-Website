@@ -56,6 +56,12 @@
   }
 }
 
+.title-section.slide.title-section::after {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  opacity: 1;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -94,7 +100,7 @@ button {
 .main {
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1150px;
   margin: 0 auto;
   min-height: 130vh;
 }
@@ -580,6 +586,22 @@ form {
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-me .title-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(2000px);
+          transform: translateX(2000px);
+  width: 100px;
+  height: 1px;
+  background-color: #b7b7b7;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
 }
 
 @media (min-width: 1024px) {
@@ -604,7 +626,7 @@ form {
 .skills {
   width: 100%;
   min-height: 30vh;
-  padding: 30px 20px 0 20px;
+  padding: 30px 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
   z-index: 10;
 }
@@ -620,6 +642,22 @@ form {
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills .title-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(2000px);
+          transform: translateX(2000px);
+  width: 100px;
+  height: 1px;
+  background-color: #b7b7b7;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
 }
 
 @media (min-width: 1024px) {
@@ -683,7 +721,7 @@ form {
 
 .projects {
   width: 100%;
-  padding: 30px 20px 10px 20px;
+  padding: 30px 20px;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
@@ -719,6 +757,22 @@ form {
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .title-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(2000px);
+          transform: translateX(2000px);
+  width: 100px;
+  height: 1px;
+  background-color: #b7b7b7;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
 }
 
 @media (min-width: 768px) {
@@ -837,7 +891,7 @@ form {
 
 .contact {
   width: 100%;
-  padding: 0 20px 20px 20px;
+  padding: 30px 20px;
   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -855,7 +909,23 @@ form {
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 30px;
+}
+
+.contact .title-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(2000px);
+          transform: translateX(2000px);
+  width: 100px;
+  height: 1px;
+  background-color: #b7b7b7;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
 }
 
 .contact .contact-form {

@@ -1,7 +1,7 @@
 .skills {
   width: 100%;
   min-height: 30vh;
-  padding: 30px 20px 0 20px;
+  padding: 30px 20px;
   background: $main-background-top;
   z-index: 10;
   @media (min-width: 768px) {
@@ -13,6 +13,7 @@
       margin-bottom: 25px;
     }
   }
+
   .skills-wrapper {
     display: flex;
     flex-wrap: wrap;
