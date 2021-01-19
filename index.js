@@ -80,7 +80,7 @@ function titleAfterSlide() {
     let windowHeight = window.innerHeight;
     let revealTop = titleSection[i].getBoundingClientRect().top;
 
-    if (revealTop < windowHeight - 50) {
+    if (revealTop < windowHeight - 180) {
       titleSection[i].classList.add("slide");
     } else {
       titleSection[i].classList.remove("slide");

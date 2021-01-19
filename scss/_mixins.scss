@@ -28,10 +28,10 @@
     position: absolute;
     top: 50%;
     transform: translateX(2000px);
-    width: 100px;
+    width: 50px;
     height: 1px;
     background-color: darken($font-color, 15%);
-    transition: 0.5s ease-in-out;
+    transition: 0.65s ease-in-out;
     opacity: 0;
   }
 }

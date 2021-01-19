@@ -23,13 +23,58 @@
     .skill-font {
       width: 25%;
       padding: 25px 5px;
+      position: relative;
       font-size: 3rem;
       text-align: center;
       transition: 0.3s;
+      &::after {
+        content: "HTML";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        width: 80%;
+        height: 100%;
+        line-height: 165px;
+        text-align: center;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.08);
+        color: $font-color;
+        font-family: "Poppins", sans-serif;
+        transition: 0.5s;
+        opacity: 0;
+        box-shadow: 0 3px 20px 10px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    }
+    .skill-font:nth-child(2)::after {
+      content: "CSS";
+    }
+    .skill-font:nth-child(3)::after {
+      content: "SASS";
+    }
+    .skill-font:nth-child(4)::after {
+      content: "JavaScript";
+    }
+    .skill-font:nth-child(5)::after {
+      content: "React";
+    }
+    .skill-font:nth-child(6)::after {
+      content: "Bootstrap";
+    }
+    .skill-font:nth-child(7)::after {
+      content: "Git";
+    }
+    .skill-font:nth-child(8)::after {
+      content: "npm";
     }
     .skill-font:hover {
       cursor: pointer;
       color: rgb(250, 65, 65);
+      &::after {
+        opacity: 1;
+      }
     }
     .skill-font:hover:nth-child(2) {
       color: rgb(125, 125, 250);
