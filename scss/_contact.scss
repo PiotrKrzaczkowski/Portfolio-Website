@@ -21,13 +21,14 @@
     transition: 0.3s;
     .form-control {
       width: 100%;
-      padding: 5px;
+      padding: 2px;
       margin: 0 auto 10px;
       background: transparent;
       border: none;
       border-bottom: 1px solid darken($font-color, 60%);
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: $font-color;
+      font-family: "Poppins", sans-serif;
     }
     .form-control.submit {
       border: none;

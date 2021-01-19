@@ -32,19 +32,19 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -40%);
+        transform: translate(-50%, -45%);
         width: 80%;
         height: 100%;
         line-height: 165px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.7rem;
         background-color: rgba(0, 0, 0, 0.08);
         color: $font-color;
         font-family: "Poppins", sans-serif;
         transition: 0.5s;
         opacity: 0;
-        box-shadow: 0 3px 20px 10px rgba(0, 0, 0, 0.08);
-        border-radius: 10px;
+        box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.08);
+        border-radius: 15px;
         overflow: hidden;
       }
     }

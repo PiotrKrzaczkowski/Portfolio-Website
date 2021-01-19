@@ -26,12 +26,13 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    bottom: 15%;
+    left: 0;
     transform: translateX(2000px);
-    width: 50px;
+    width: 83px;
     height: 1px;
     background-color: darken($font-color, 15%);
-    transition: 0.65s ease-in-out;
+    transition: 0.7s ease-in-out;
     opacity: 0;
   }
 }

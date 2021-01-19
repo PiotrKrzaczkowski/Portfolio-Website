@@ -76,11 +76,11 @@ function reveal() {
 
 function titleAfterSlide() {
   const titleSection = document.querySelectorAll(".title-section");
+
   for (let i = 0; i < titleSection.length; i++) {
     let windowHeight = window.innerHeight;
     let revealTop = titleSection[i].getBoundingClientRect().top;
-
-    if (revealTop < windowHeight - 180) {
+    if (revealTop < windowHeight - 150) {
       titleSection[i].classList.add("slide");
     } else {
       titleSection[i].classList.remove("slide");
