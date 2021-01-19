@@ -38,12 +38,12 @@
         line-height: 165px;
         text-align: center;
         font-size: 0.7rem;
-        background-color: rgba(0, 0, 0, 0.08);
+        background-color: rgba(0, 0, 0, 0.03);
         color: $font-color;
         font-family: "Poppins", sans-serif;
         transition: 0.5s;
         opacity: 0;
-        box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.03);
         border-radius: 15px;
         overflow: hidden;
       }

@@ -674,7 +674,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    font-size: 1rem;
     opacity: 0;
     transition: 2s;
     @media (min-width: 768px) {
@@ -687,8 +686,8 @@
       color: darken($font-color, 20%);
       transition: 0.3s ease-in-out;
       @media (min-width: 1024px) {
-        font-size: 1.5rem;
-        top: 25%;
+        font-size: 1.6rem;
+        top: 30%;
         left: 35%;
       }
     }
@@ -698,10 +697,10 @@
     }
 
     .header-link:nth-child(2) {
-      top: 42%;
+      top: 45%;
       left: 72%;
       @media (min-width: 1024px) {
-        top: 37%;
+        top: 40%;
         left: 63%;
       }
     }
@@ -709,16 +708,16 @@
       top: 56%;
       left: 25%;
       @media (min-width: 1024px) {
-        top: 62%;
-        left: 39%;
+        top: 63%;
+        left: 40%;
       }
     }
     .header-link:nth-child(4) {
       top: 72%;
       left: 65%;
       @media (min-width: 1024px) {
-        top: 70%;
-        left: 63%;
+        top: 71%;
+        left: 65%;
       }
     }
     .header-link::after {

@@ -61,7 +61,7 @@
     }
     ::placeholder {
       padding: 5px;
-      color: darken($font-color, 5%);
+      color: darken($font-color, 15%);
     }
   }
   .contact-links-wrapper {
@@ -79,8 +79,7 @@
     }
   }
   .contact-link:hover {
-    color: $hover-color;
-    text-shadow: 0 0 5px $font-color;
+    color: $color-font;
   }
   .contact-awesome {
     width: 25px;
