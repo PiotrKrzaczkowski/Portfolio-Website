@@ -79,9 +79,8 @@ function titleAfterSlide() {
   for (let i = 0; i < titleSection.length; i++) {
     let windowHeight = window.innerHeight;
     let revealTop = titleSection[i].getBoundingClientRect().top;
-    let revealBottom = titleSection[i].getBoundingClientRect().bottom;
-    const revealPoint = 50;
-    if (revealTop < windowHeight - revealPoint) {
+
+    if (revealTop < windowHeight - 50) {
       titleSection[i].classList.add("slide");
     } else {
       titleSection[i].classList.remove("slide");

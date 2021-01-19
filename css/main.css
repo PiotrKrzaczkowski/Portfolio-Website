@@ -105,8 +105,15 @@ button {
   min-height: 130vh;
 }
 
-form {
-  display: block;
+p.title-section {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+p.title-section.slide {
+  color: #9bdad8;
 }
 
 .navigation {
@@ -173,6 +180,7 @@ form {
   font-size: 0.8rem;
   text-align: center;
   font-weight: 300;
+  color: #9bdad8;
 }
 
 @media (min-width: 768px) {
@@ -286,6 +294,10 @@ form {
   transition: ease-in-out 0.3s;
 }
 
+.navigation .mobile-menu .mobile-list .mobile-link:hover {
+  color: #9bdad8;
+}
+
 @media (min-width: 768px) {
   .navigation .mobile-menu .mobile-list {
     top: 80px;
@@ -349,7 +361,7 @@ form {
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 1px;
-  color: white;
+  color: #9bdad8;
 }
 
 .navigation .desktop-title-link .desktop-title {
