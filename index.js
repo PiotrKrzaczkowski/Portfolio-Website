@@ -30,7 +30,6 @@ burgerBtn.addEventListener("click", () => {
 });
 
 // ANIMATIONS ON SCROLL
-
 const linksContainer = document.querySelector(".header-links-container");
 const desktopMenu = document.querySelector(".desktop-menu");
 const desktopNav = document.querySelector(".desktop-nav");
@@ -50,7 +49,7 @@ document.addEventListener("scroll", () => {
     desktopNav.classList.remove("bcg");
     title.classList.remove("bcg");
   }
-
+  // HEADER LINKS SHOW/HIDE ON SCROLL
   if (window.scrollY > 130) {
     linksContainer.classList.remove("visible");
   } else {
@@ -58,8 +57,8 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// SLIDE PROJECT ITEMS ON SCROLL
 window.addEventListener("scroll", reveal);
-
 function reveal() {
   const reveals = document.querySelectorAll(".reveal");
   for (let i = 0; i < reveals.length; i++) {
@@ -74,6 +73,7 @@ function reveal() {
   }
 }
 
+// SLIDE AFTER PSEUDOELEMENT ON SCROLL
 function titleAfterSlide() {
   const titleSection = document.querySelectorAll(".title-section");
 
@@ -89,10 +89,12 @@ function titleAfterSlide() {
 }
 window.addEventListener("scroll", titleAfterSlide);
 
+// SMOOTH SCROLL
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,
 });
 
+// EVERY RELOAD JUPT TO FIRST SECTION
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
