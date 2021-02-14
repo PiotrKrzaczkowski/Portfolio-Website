@@ -164,11 +164,13 @@
     justify-content: space-evenly;
     align-items: center;
     margin-right: 25px;
+    visibility: hidden;
     opacity: 0;
     transition: 0.3s;
   }
   .desktop-nav.bcg {
     opacity: 1;
+    visibility: visible;
   }
   .desktop-link {
     padding: 0 15px;

@@ -386,6 +386,7 @@ p.title-section.slide {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 25px;
+  visibility: hidden;
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -393,6 +394,7 @@ p.title-section.slide {
 
 .navigation .desktop-nav.bcg {
   opacity: 1;
+  visibility: visible;
 }
 
 .navigation .desktop-link {
@@ -1135,7 +1137,7 @@ p.title-section.slide {
 
 .footer {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1150px;
   margin: 0 auto;
   text-align: center;
   font-size: 0.75rem;
