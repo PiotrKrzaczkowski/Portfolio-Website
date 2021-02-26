@@ -46,3 +46,11 @@ p.title-section {
 p.title-section.slide {
   color: $color-font;
 }
+
+.bcg {
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(18, 26, 36) 0%,
+    #090a0f 100%
+  );
+}

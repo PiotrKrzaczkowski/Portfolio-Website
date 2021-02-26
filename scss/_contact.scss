@@ -1,7 +1,7 @@
 .contact {
   width: 100%;
   padding: 30px 20px;
-  background: $main-background-top;
+  // background: $main-background-top;
   transition: 0.3s;
   z-index: 10;
   @media (min-width: 768px) {
@@ -105,7 +105,7 @@
   margin: 0 auto;
   text-align: center;
   font-size: 0.75rem;
-  background: $main-background-bottom;
+  // background: $main-background-bottom;
   .title-footer {
     padding: 15px 0 5px;
     color: darken($font-color, 25%);
