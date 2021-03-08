@@ -740,4 +740,50 @@
   .header-links-container.visible {
     opacity: 1;
   }
+
+  .planet-container {
+    display: none;
+    @media (min-width: 1100px) {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .planet {
+      width: 45px;
+      height: 45px;
+      position: relative;
+      background: url("../img/stars/mars.png");
+      top: 25%;
+      left: 12%;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.7);
+      }
+      .planeta {
+        width: 100%;
+      }
+    }
+
+    .planet:nth-child(2) {
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/stars/earth-min.png");
+      top: 45%;
+      left: 85%;
+    }
+    .planet:nth-child(3) {
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/stars/mars.png");
+      top: 75%;
+      left: 20%;
+    }
+  }
 }

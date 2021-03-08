@@ -2,6 +2,7 @@
 const mobileMenuList = document.querySelector(".mobile-list");
 const burgerBtn = document.querySelector(".burger-btn");
 const ulBtns = document.querySelectorAll(".mobile-menu a");
+const planets = document.querySelectorAll(".planet");
 let open = false;
 
 // SIDE LIST LINKS TOGGLE
@@ -98,3 +99,14 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
+
+document.addEventListener("mousemove", function (e) {
+  planets.forEach((planet) => {
+    const speed = planet.getAttribute("data-speed");
+
+    const x = (window.innerWidth - e.pageX * speed) / 100;
+    const y = (window.innerHeight - e.pageY * speed) / 100;
+
+    planet.style.transform = `translate(${x}px, ${y}px)`;
+  });
+});
