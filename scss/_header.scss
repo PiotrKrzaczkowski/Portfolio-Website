@@ -676,6 +676,8 @@
     height: 100%;
     opacity: 0;
     transition: 2s;
+    z-index: 15;
+
     @media (min-width: 768px) {
       font-size: 1.3rem;
     }
@@ -686,9 +688,10 @@
       color: darken($font-color, 20%);
       transition: 0.3s ease-in-out;
       @media (min-width: 1024px) {
-        font-size: 1.6rem;
         top: 30%;
         left: 35%;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
       }
     }
     .header-link:hover {
@@ -748,14 +751,17 @@
       width: 100%;
       height: 100%;
       position: relative;
+      overflow: hidden;
+      transition: 6s;
     }
     .planet {
       width: 45px;
       height: 45px;
       position: relative;
       background: url("../img/stars/mars.png");
-      top: 25%;
+      top: 20%;
       left: 12%;
+
       &::after {
         content: "";
         position: absolute;
@@ -775,14 +781,14 @@
       width: 30px;
       height: 30px;
       background-image: url("../img/stars/earth-min.png");
-      top: 45%;
+      top: 40%;
       left: 85%;
     }
     .planet:nth-child(3) {
       width: 40px;
       height: 40px;
       background-image: url("../img/stars/mars.png");
-      top: 75%;
+      top: 70%;
       left: 20%;
     }
   }

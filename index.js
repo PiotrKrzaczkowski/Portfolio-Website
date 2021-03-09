@@ -100,9 +100,10 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
 
-document.addEventListener("mousemove", function (e) {
-  planets.forEach((planet) => {
+window.addEventListener("mousemove", function (e) {
+  this.document.querySelectorAll(".planet").forEach((planet) => {
     const speed = planet.getAttribute("data-speed");
+    console.log(planets);
 
     const x = (window.innerWidth - e.pageX * speed) / 100;
     const y = (window.innerHeight - e.pageY * speed) / 100;
@@ -110,3 +111,5 @@ document.addEventListener("mousemove", function (e) {
     planet.style.transform = `translate(${x}px, ${y}px)`;
   });
 });
+
+console.log(document.querySelector(".planet"));

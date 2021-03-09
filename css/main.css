@@ -495,6 +495,7 @@ p.title-section.slide {
   opacity: 0;
   -webkit-transition: 2s;
   transition: 2s;
+  z-index: 15;
 }
 
 @media (min-width: 768px) {
@@ -514,9 +515,10 @@ p.title-section.slide {
 
 @media (min-width: 1024px) {
   .header .header-links-container .header-link {
-    font-size: 1.6rem;
     top: 30%;
     left: 35%;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
   }
 }
 
@@ -596,6 +598,9 @@ p.title-section.slide {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
+    -webkit-transition: 6s;
+    transition: 6s;
   }
 }
 
@@ -604,7 +609,7 @@ p.title-section.slide {
   height: 45px;
   position: relative;
   background: url("../img/stars/mars.png");
-  top: 25%;
+  top: 20%;
   left: 12%;
 }
 
@@ -627,7 +632,7 @@ p.title-section.slide {
   width: 30px;
   height: 30px;
   background-image: url("../img/stars/earth-min.png");
-  top: 45%;
+  top: 40%;
   left: 85%;
 }
 
@@ -635,7 +640,7 @@ p.title-section.slide {
   width: 40px;
   height: 40px;
   background-image: url("../img/stars/mars.png");
-  top: 75%;
+  top: 70%;
   left: 20%;
 }
 
