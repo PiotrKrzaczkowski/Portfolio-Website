@@ -622,6 +622,8 @@ p.title-section.slide {
   height: 100%;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.7);
 }
 
 .header .planet-container .planet .planeta {
